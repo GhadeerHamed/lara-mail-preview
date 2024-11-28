@@ -1,0 +1,22 @@
+{
+    "name": "ghadeer/lara-mail-preview",
+    "description": "Preview mailable in browser while development.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ghadeer\\LaraMailPreview\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ghadeerhamed",
+            "email": "eng.gh.a.h93@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php" : ">=8.1",
+        "illuminate/support": ">=v10.0.0"
+    }
+}
