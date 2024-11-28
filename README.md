@@ -22,4 +22,14 @@ Run the following command to install the package via Composer:
 
 ```bash
 composer require ghadeer/lara-mail-preview
+```
 
+## Images
+#### Select mail class:
+![Dropdown to select mailable](images/mail-class-select.png)
+
+#### Fill the fields:
+![Fields](images/fields.png)
+
+#### See result:
+![Result](images/result.png)
