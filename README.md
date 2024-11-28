@@ -21,4 +21,4 @@ A Laravel package that allows you to preview and customize mailables directly fr
 Run the following command to install the package via Composer:
 
 ```bash
-composer require ghadeerhamed/lara-mail-preview
+composer require ghadeer/lara-mail-preview
