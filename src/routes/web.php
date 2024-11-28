@@ -8,16 +8,6 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('email-preview', [MailPreviewController::class, 'showForm'])->name('email.preview.form');
-Route::post('email-preview', [MailPreviewController::class, 'handleForm'])->name('email.preview.submit');
-Route::post('email-render', [MailPreviewController::class, 'render'])->name('email.preview.render');
-
-Route::get('email-preview/{mailable}', function ($mailable) {
-    $mailableClass = 'App\\Mail\\' . $mailable;
-    if (class_exists($mailableClass)) {
-        $mailableInstance = new $mailableClass();
-        return MailPreview::render($mailableInstance);
-    }
-
-    throw new FileNotFoundException();
-});
+Route::get('mail-preview', [MailPreviewController::class, 'showForm'])->name('mail.preview.form');
+Route::post('mail-preview', [MailPreviewController::class, 'handleForm'])->name('mail.preview.submit');
+Route::post('mail-render', [MailPreviewController::class, 'render'])->name('mail.preview.render');

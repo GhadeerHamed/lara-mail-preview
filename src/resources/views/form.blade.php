@@ -54,7 +54,7 @@
             let selectedClass = $(this).val();
             if (selectedClass && selectedClass !== '-') {
                 $.ajax({
-                    url: "{{ route('email.preview.submit') }}", // Adjust this route as needed
+                    url: "{{ route('mail.preview.submit') }}", // Adjust this route as needed
                     method: "POST",
                     data: {
                         _token: "{{ csrf_token() }}",
@@ -120,7 +120,7 @@
 
             // Send data via AJAX to a route
             $.ajax({
-                url: "{{ route('email.preview.render') }}", // Adjust this route for form submission
+                url: "{{ route('mail.preview.render') }}", // Adjust this route for form submission
                 method: "POST",
                 data: formData,
                 success: function (response) {
