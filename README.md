@@ -22,3 +22,4 @@ Run the following command to install the package via Composer:
 
 ```bash
 composer require ghadeer/lara-mail-preview
+
