@@ -27,7 +27,7 @@ class MailPreviewController extends Controller
         foreach ($mailableFiles as $mailable) {
             $fileName = $mailable->getFilename();
 
-            $path = str($mailable->getPath())->after('app\\')->replace('/', '\\');
+            $path = str($mailable->getPath())->replace('/', '\\')->afterLast('app\\');
             $class = "App\\" . $path . "\\" . str($fileName)->before('.php');
 
             $baseName = class_basename($class);
